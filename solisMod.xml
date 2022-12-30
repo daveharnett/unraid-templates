@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>SolisMod</Name>
-  <Repository>NosIreland/solismod</Repository>
+  <Repository>nosireland/solismod</Repository>
   <Registry>https://hub.docker.com/r/nosireland/solismod/</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -11,23 +11,28 @@
   <Project/>
   <Overview>This is a first attempt to modify Solis inverter settings.</Overview>
   <Category/>
-  <!-- <WebUI></WebUI> -->
+  <WebUI/>
   <TemplateURL/>
-  <Icon></Icon>
+  <Icon/>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled></DateInstalled>
+  <DateInstalled>1672408165</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description></Description>
+  <Description>This is a first attempt to modify Solis inverter settings.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/solismod/config</HostDir>
+      <HostDir>/mnt/user/appdata/solismod/config/</HostDir>
       <ContainerDir>/solismod/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment/>
   <Labels/>
+  <Config Name="ConfigPath" Target="/solismod/config" Default="" Mode="rw" Description="Container Path: /solismod/config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/solismod/config/</Config>
 </Container>
