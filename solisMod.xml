@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>SolisMod</Name>
+  <Repository>NosIreland/solismod</Repository>
+  <Registry>https://hub.docker.com/r/nosireland/solismod/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/NosIreland/solismod</Support>
+  <Project/>
+  <Overview>This is a first attempt to modify Solis inverter settings.</Overview>
+  <Category/>
+  <!-- <WebUI></WebUI> -->
+  <TemplateURL/>
+  <Icon></Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description></Description>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/solismod/config</HostDir>
+      <ContainerDir>/solismod/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+</Container>
